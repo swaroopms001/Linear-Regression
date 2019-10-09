@@ -1,9 +1,6 @@
 
 # coding: utf-8
 
-# In[144]:
-
-
 """
 Created on Wed Oct 9 10:15:19 2019
 @author: Gourav Pattanaik
@@ -22,14 +19,6 @@ class MultipleLinearRegression:
         self.dict = OrderedDict(Dict);
         self.threshLimit= 1.96 / (math.sqrt(len(Dict)))
         self.elemCount=len(Dict)
-        #x=self.getSumOfY()
-        #print(x)
-        #y=self.getSumOfX1X2()
-        #print(y)
-        #y=self.getVariablesM1_M2_C()
-        #print(y[0])
-        #print(y[1])
-        #print(y[2])
         
     def main(self):
         return (self.dict)
@@ -110,12 +99,9 @@ class MultipleLinearRegression:
        ' main()'
         
 
-d = {1:(10,20), 2:(20,30), 3:(30,40), 4:(40,50), 5:(50,60), 6:(60,70)}
+##d = {1:(10,20), 2:(20,30), 3:(30,40), 4:(40,50), 5:(50,60), 6:(60,70)}
+d = {64:(57,8), 71:(59,10), 53:(49,6), 67:(62,11), 55:(51,8), 58:(50,7),77:(55,10),57:(48,9),56:(52,10),51:(42,6),76:(61,12),68:(57,9)}
 ##print(d)
 ld = MultipleLinearRegression(d)
 
 print(ld.displayMultiEqn())
-
-##print(ld.displayEqn())
-##print(ld.displayLinearRegGraph())
-
