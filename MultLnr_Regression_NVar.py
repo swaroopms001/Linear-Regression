@@ -30,7 +30,7 @@ def Reg_Cff_List(input_str,n):
         gov_eqn_r = str(input_str.split('= ')[1]).split('+')
         for ele in gov_eqn_r:
             if reg_var in ele:
-                reg_cff.append(int(ele.split(reg_var)[1]))
+                reg_cff.append(float(ele.split(reg_var)[1]))
     return reg_cff
 
 def print_matrices(Action, Title1, M1, Title2, M2):
@@ -210,7 +210,7 @@ def MulLnrRegression(n,input_list):
         res.append(sub) 
     listm = [[None] for i in range(len(res))]
     for i in range(len(res)):
-        listm[i][0]=int(res[i][0])
+        listm[i][0]=float(res[i][0])
 
     B = listm
     print(B)
@@ -219,7 +219,7 @@ def MulLnrRegression(n,input_list):
     print(X)
 	
 # Driver Code for 3 variables
-MulLnrRegression(3,[[57,59,49,62,51,50,55,48,52,42,61,57],[8,10,6,11,8,7,10,9,10,6,12,9],[64,71,53,67,55,58,77,57,56,51,76,68]])
+#MulLnrRegression(3,[[57,59,49,62,51,50,55,48,52,42,61,57],[8,10,6,11,8,7,10,9,10,6,12,9],[64,71,53,67,55,58,77,57,56,51,76,68]])
 
 # Driver Code for 2 variables
-MulLnrRegression(2,[[100,75,80,90,60,50,25,40],[15,11,15,14,8,9,2,5]])
+#MulLnrRegression(2,[[7.9,7.92,7.91,7.96,7.98,8.01,8.05,8.06,8.06,8.07,8.09,8.11,8.14,8.17,8.19,8.23,8.27,8.29,8.3],[8.45,8.52,8.25,8.58,8.58,8.63,8.74,8.7,8.61,8.59,8.77,8.8,8.79,8.83,8.91,8.97,8.97,9.04,9.05]])
